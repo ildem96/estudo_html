@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <style>
+        body{
+            
+            background-color:#ccf1ff;
+            }
+            h1{color:red}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulários</title>
+</head>
+
+<body>
+    
+    <h1>Cadastro provas HSK</h1>
+    <br>
+    <table action="cadastro.php" method="GET">
+        <fieldset>
+            <legend>Informações Pessoais</legend> <br>
+            Nome:<br>
+            <input type="text" name="Nome" required focus><br>
+            Endereço:<br>
+            <input type="text" name="endereco" required><br>
+            E-Mail:<br>
+            <input type="email" name="email" required><br>
+            Número:<br>
+            <input type="number" name="numero-celular" required><br>
+            Senha:<br>
+            <input type="password" name="pwd" required minlength="8"><br>
+            <br>
+             Sexo do aluno:<br>
+            <input type="radio" name="masculino" value="masculino">Masculino<br>
+            <input type="radio" name="feminino" value="feminino">Feminino
+            <br>
+            <br>
+            Nível Banda 1:<br>
+            <input type="checkbox" name="hsk1" value="HSK1">HSK1<br>
+            <input type="checkbox" name="hsk2" value="HSK2">HSK2<br>
+            <input type="checkbox" name="hsk3" value="hsk3">HSK3<br>
+            <br>
+            <input type="submit" name="send" value="Enviar"><br>
+            
+            </fieldset>
+            <br>
+            <p>No total, existem seis níveis de HSK. O HSK 1 engloba o Chinês do nível mais básico até ao HSK 6, que corresponde a fluência completa no idioma. Vamos explicar um pouco mais sobre cada nível e quais serão as suas expectativas após a realização do exame:</p>
+            <!--tabela com descrição de cada nivel-->
+            <br>
+            
+            <table border="1">
+                
+                <tr><td colspan="3">NIVEL POR HSK</td></tr>
+                
+                <tr>
+                    <td>Nivel</td>
+                    <td colspan="2">Numero de palavras</td>
+                    
+                </tr>
+                
+                <tr>
+                    <td>Nivel 1</td>
+                    <td>150 palavras</td>
+                    <td>Capacidade de compreender palavras e frases básicas em Chinês</td>
+                </tr>
+                
+                <tr>
+                    <td>Nivel 2</td>
+                    <td>300 palavras</td>
+                    <td>Poder usar Chinês básico e aplicar para realização de tarefas simples</td>
+                </tr>
+                
+                <tr>
+                    <td>Nivel 3</td>
+                    <td>600 palavras</td>
+                    <td>Poder comunicar no cotidiano no âmbito acadêmico e profissional</td>
+                </tr>
+                
+            </table>
+            <br>
+            Para mais insformações sobre a prova do HSK visite a página da <a href="https://ltl-chines.com/exame-hsk/" target="_blank">LTL School</a> ou visite o site do <a href="https://www.institutoconfucio.com.br/exame-de-proficiencia/" target="_blank">Instituto Confucio na Unesp</a>
+
+</body>
+
+</html>
